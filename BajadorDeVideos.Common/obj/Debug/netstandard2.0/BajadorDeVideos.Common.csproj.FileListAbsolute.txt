@@ -1,0 +1,17 @@
+/Users/pablozaiden/Downloads/BajadorDeVideos/BajadorDeVideos.Common/bin/Debug/netstandard2.0/BajadorDeVideos.Common.deps.json
+/Users/pablozaiden/Downloads/BajadorDeVideos/BajadorDeVideos.Common/bin/Debug/netstandard2.0/BajadorDeVideos.Common.dll
+/Users/pablozaiden/Downloads/BajadorDeVideos/BajadorDeVideos.Common/bin/Debug/netstandard2.0/BajadorDeVideos.Common.pdb
+/Users/pablozaiden/Downloads/BajadorDeVideos/BajadorDeVideos.Common/obj/Debug/netstandard2.0/BajadorDeVideos.Common.csproj.CoreCompileInputs.cache
+/Users/pablozaiden/Downloads/BajadorDeVideos/BajadorDeVideos.Common/obj/Debug/netstandard2.0/BajadorDeVideos.Common.AssemblyInfoInputs.cache
+/Users/pablozaiden/Downloads/BajadorDeVideos/BajadorDeVideos.Common/obj/Debug/netstandard2.0/BajadorDeVideos.Common.AssemblyInfo.cs
+/Users/pablozaiden/Downloads/BajadorDeVideos/BajadorDeVideos.Common/obj/Debug/netstandard2.0/BajadorDeVideos.Common.dll
+/Users/pablozaiden/Downloads/BajadorDeVideos/BajadorDeVideos.Common/obj/Debug/netstandard2.0/BajadorDeVideos.Common.pdb
+C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\bin\Debug\netstandard2.0\BajadorDeVideos.Common.deps.json
+C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\bin\Debug\netstandard2.0\BajadorDeVideos.Common.dll
+C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\bin\Debug\netstandard2.0\BajadorDeVideos.Common.pdb
+C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.csprojResolveAssemblyReference.cache
+C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.csproj.CoreCompileInputs.cache
+C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.AssemblyInfoInputs.cache
+C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.AssemblyInfo.cs
+C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.dll
+C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.pdb
