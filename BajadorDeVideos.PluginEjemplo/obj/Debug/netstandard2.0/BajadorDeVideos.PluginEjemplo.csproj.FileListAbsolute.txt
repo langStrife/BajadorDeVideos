@@ -19,3 +19,14 @@ C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\obj
 C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\obj\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.AssemblyInfo.cs
 C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\obj\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.dll
 C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\obj\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.pdb
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\bin\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.deps.json
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\bin\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.dll
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\bin\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.pdb
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\bin\Debug\netstandard2.0\BajadorDeVideos.Common.dll
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\bin\Debug\netstandard2.0\BajadorDeVideos.Common.pdb
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\obj\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.csprojResolveAssemblyReference.cache
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\obj\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.csproj.CoreCompileInputs.cache
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\obj\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.AssemblyInfoInputs.cache
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\obj\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.AssemblyInfo.cs
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\obj\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.dll
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.PluginEjemplo\obj\Debug\netstandard2.0\BajadorDeVideos.PluginEjemplo.pdb

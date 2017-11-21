@@ -4552,7 +4552,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vir\\.nuget\\packages\\": {},
+    "C:\\Users\\Ivan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -4561,17 +4561,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vir\\Desktop\\workspace\\BajadorDeVideos\\BajadorDeVideos.Common\\BajadorDeVideos.Common.csproj",
+      "projectUniqueName": "D:\\workspace\\Lagash\\BajadorDeVideos\\BajadorDeVideos.Common\\BajadorDeVideos.Common.csproj",
       "projectName": "BajadorDeVideos.Common",
-      "projectPath": "C:\\Users\\Vir\\Desktop\\workspace\\BajadorDeVideos\\BajadorDeVideos.Common\\BajadorDeVideos.Common.csproj",
-      "packagesPath": "C:\\Users\\Vir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vir\\Desktop\\workspace\\BajadorDeVideos\\BajadorDeVideos.Common\\obj\\",
+      "projectPath": "D:\\workspace\\Lagash\\BajadorDeVideos\\BajadorDeVideos.Common\\BajadorDeVideos.Common.csproj",
+      "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
+      "outputPath": "D:\\workspace\\Lagash\\BajadorDeVideos\\BajadorDeVideos.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Vir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

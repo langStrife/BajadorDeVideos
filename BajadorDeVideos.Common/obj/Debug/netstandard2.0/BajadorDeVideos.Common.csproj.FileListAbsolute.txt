@@ -15,3 +15,12 @@ C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\
 C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.AssemblyInfo.cs
 C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.dll
 C:\Users\Vir\Desktop\workspace\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.pdb
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.Common\bin\Debug\netstandard2.0\BajadorDeVideos.Common.deps.json
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.Common\bin\Debug\netstandard2.0\BajadorDeVideos.Common.dll
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.Common\bin\Debug\netstandard2.0\BajadorDeVideos.Common.pdb
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.csprojResolveAssemblyReference.cache
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.csproj.CoreCompileInputs.cache
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.AssemblyInfoInputs.cache
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.AssemblyInfo.cs
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.dll
+D:\workspace\Lagash\BajadorDeVideos\BajadorDeVideos.Common\obj\Debug\netstandard2.0\BajadorDeVideos.Common.pdb

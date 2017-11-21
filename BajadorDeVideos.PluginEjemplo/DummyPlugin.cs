@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Net.Http;
 using HtmlAgilityPack;
 using System.Collections.Generic;
 using BajadorDeVideos.Common;
@@ -69,21 +70,42 @@ namespace BajadorDeVideos.PluginEjemplo
 
         public byte[] Bajar(Video video)
         {
-            WebClient client = new WebClient();
-            HtmlDocument htmlDoc = new HtmlDocument();
-            var sourceCode = GetSourceCode(video.Link);
-            htmlDoc.LoadHtml(sourceCode);
 
-
-            var nodeFrame = htmlDoc.DocumentNode.SelectSingleNode("//video");
-            var src = nodeFrame.Attributes["src"].Value;
-            int start = src.IndexOf("https://embed");
-            int end = src.IndexOf('"', start);
-            string videoUrl = src.Substring(start, end - start);
-
-            var archivo = new byte[0];
-            return archivo = client.DownloadData(videoUrl);
+            HttpClient client = new HttpClient();
+            HtmlWeb web = new HtmlWeb();
+            HtmlDocument htmlVideo = web.Load(video.Link);
+            var iframeSource = htmlVideo.DocumentNode.SelectSingleNode("//iframe").GetAttributeValue("src", string.Empty);
+            if (!iframeSource.Contains("https:"))
+            {
+                iframeSource = "https:" + iframeSource;
+            }
+            htmlVideo = web.Load(iframeSource);
+            string htmlScript = htmlVideo.DocumentNode.SelectSingleNode("//body").InnerHtml;
+            int start = htmlScript.IndexOf("https://embed");
+            int end = htmlScript.IndexOf('"', start);
+            string videoUrl = htmlScript.Substring(start, end - start);
+            byte[] archivo = new byte[0];
+            return archivo = client.GetByteArrayAsync(videoUrl).Result;
             
+
+            //WebClient client = new WebClient();
+            //HtmlWeb web = new HtmlWeb();
+            //var htmlVideo = web.Load(video.Link);
+            //HtmlDocument htmlDoc = new HtmlDocument();
+            //var sourceCode = GetSourceCode(video.Link);
+            //htmlDoc.LoadHtml(sourceCode);
+
+
+            //var nodeFrame = htmlDoc.DocumentNode.SelectSingleNode(string.Format("//iframe"));
+
+
+            //var src = nodeFrame.Attributes["src"].Value;
+            //int start = src.IndexOf("https://embed");
+            //int end = src.IndexOf('"', start);
+            //string videoUrl = src.Substring(start, end - start);
+
+            //var archivo = new byte[0];
+            //return archivo = client.DownloadData(videoUrl);
         }
     }
 }

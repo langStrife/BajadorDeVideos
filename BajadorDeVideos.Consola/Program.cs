@@ -57,8 +57,10 @@ namespace BajadorDeVideos.Consola
             //Listo los videos por consola y le pido al usuario que elija uno
             Video selectedVideo = plugin.ListVideos(videoList);
 
+            //Guardo el video seleccionado en un vector de bytes y lo guardo en una variable
             byte[] archivo = plugin.Bajar(selectedVideo);
 
+            //Grabo el archivo como un video en la carpeta base
             File.WriteAllBytes(selectedVideo.Titulo + ".mp4", archivo);
         }
 
