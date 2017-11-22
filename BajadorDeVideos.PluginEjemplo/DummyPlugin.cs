@@ -16,6 +16,7 @@ namespace BajadorDeVideos.PluginEjemplo
         public string GetSourceCode(string url)
         {
             WebClient client = new WebClient();
+            Console.WriteLine("Descargando Codigo Fuente...");
             return client.DownloadString(url);
         }
 
@@ -23,10 +24,12 @@ namespace BajadorDeVideos.PluginEjemplo
         List<Video> IPlugin.getVideoList(string sourceCode)
         {
             HtmlDocument htmlDoc = new HtmlDocument();
+
             htmlDoc.LoadHtml(sourceCode);
             var videoNodes = htmlDoc.DocumentNode.SelectNodes("//span/a");
             List<Video> videoList = new List<Video>();
 
+            Console.WriteLine("Creando Lista de Videos");
             foreach (var node in videoNodes)
             {
                 if (node.Attributes["href"].Value.Contains("/video"))
@@ -86,26 +89,55 @@ namespace BajadorDeVideos.PluginEjemplo
             string videoUrl = htmlScript.Substring(start, end - start);
             byte[] archivo = new byte[0];
             return archivo = client.GetByteArrayAsync(videoUrl).Result;
-            
 
-            //WebClient client = new WebClient();
-            //HtmlWeb web = new HtmlWeb();
-            //var htmlVideo = web.Load(video.Link);
-            //HtmlDocument htmlDoc = new HtmlDocument();
-            //var sourceCode = GetSourceCode(video.Link);
-            //htmlDoc.LoadHtml(sourceCode);
+        }
 
+        public int DisplayMenu()
+        {
+            int input;
 
-            //var nodeFrame = htmlDoc.DocumentNode.SelectSingleNode(string.Format("//iframe"));
+            Console.WriteLine();
+            Console.WriteLine("0. Salir");
+            Console.WriteLine("1. Descargar de https://www.commoncraft.com");
+            Console.WriteLine("2. Descargar de GoGoAnime [SIN IMPLEMENTAR]");
+            Console.WriteLine("3. Ingresar url propia (Puede no funcionar)[SIN IMPLEMENTAR]");
+            return input = Convert.ToInt32(Console.ReadLine());
+        }
 
+        public string SelectMenu()
+        {
+            int input;
+            string url;
 
-            //var src = nodeFrame.Attributes["src"].Value;
-            //int start = src.IndexOf("https://embed");
-            //int end = src.IndexOf('"', start);
-            //string videoUrl = src.Substring(start, end - start);
+            do
+            {
+                input = DisplayMenu();
+            } while (input < 0 || input > 3);
 
-            //var archivo = new byte[0];
-            //return archivo = client.DownloadData(videoUrl);
+            if (input == 0)
+            {
+                url = null;
+            }
+
+            else
+            if (input == 1)
+            {
+                return url = "https://www.commoncraft.com/videolist";
+            }
+
+            else
+            if (input == 2)
+            {
+                return url = "https://ww3.gogoanime.io/category/dragon-ball-kai";
+            }
+
+            else
+            if (input == 3)
+            {
+                Console.WriteLine("Ingrese la url que desea: ");
+                return url = Console.ReadLine();
+            }
+            return null;
         }
     }
 }

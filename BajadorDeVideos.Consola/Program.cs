@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using BajadorDeVideos.Common;
 using BajadorDeVideos.PluginEjemplo;
-using HtmlAgilityPack;
+using System;
 
 namespace BajadorDeVideos.Consola
-{   
+{
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Bajador De Video");
+            Console.WriteLine();
             /*
             Agregar soporte para:
                 - COMMONCRAFT
@@ -35,42 +36,27 @@ namespace BajadorDeVideos.Consola
                         - De esa URL del iframe, obtener la URL del video (tag source, dentro de video, el que diga type="video/mp4")
              */
 
-            //args[0] = "https://www.commoncraft.com/videolist";
-            //if (args.Length != 1)
-            //{
-            //    Console.WriteLine("Se requiere un unico parametro 'baseUrl'");
-            //    return;
-            //}
-
-            string url = "https://www.commoncraft.com/videolist";
-
-
             IPlugin plugin;
             plugin = new DummyPlugin();
 
-            //Consigo el codigo fuente de una url dada
-            string sourceCode = plugin.GetSourceCode(url);
+            string url = plugin.SelectMenu();
+            if (!string.IsNullOrWhiteSpace(url))
+            {
+                //Consigo el codigo fuente de una url dada
+                string sourceCode = plugin.GetSourceCode(url);
 
-            //Consigo una lista de objetos Video del codigo fuente conseguido
-            List<Video> videoList = plugin.getVideoList(sourceCode);
+                //Consigo una lista de objetos Video del codigo fuente conseguido
+                List<Video> videoList = plugin.getVideoList(sourceCode);
 
-            //Listo los videos por consola y le pido al usuario que elija uno
-            Video selectedVideo = plugin.ListVideos(videoList);
+                //Listo los videos por consola y le pido al usuario que elija uno
+                Video selectedVideo = plugin.ListVideos(videoList);
 
-            //Guardo el video seleccionado en un vector de bytes y lo guardo en una variable
-            byte[] archivo = plugin.Bajar(selectedVideo);
+                //Guardo el video seleccionado en un vector de bytes y lo guardo en una variable
+                byte[] archivo = plugin.Bajar(selectedVideo);
 
-            //Grabo el archivo como un video en la carpeta base
-            File.WriteAllBytes(selectedVideo.Titulo + ".mp4", archivo);
+                //Grabo el archivo como un video en la carpeta base
+                File.WriteAllBytes(selectedVideo.Titulo + ".mp4", archivo);
+            }
         }
-
-
-            //List<Video> listaVideos = plugin.ListarVideosDisponibles(url);
-
-            //if (listaVideos.Count > 0)
-            //{
-            //    byte[] contenido = plugin.Bajar(listaVideos[0]);
-            //    File.WriteAllBytes("video.txt", contenido);
-            //}
     }
 }

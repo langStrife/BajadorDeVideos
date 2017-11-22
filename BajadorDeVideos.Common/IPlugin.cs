@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using HtmlAgilityPack;
 
 namespace BajadorDeVideos.Common
 {
@@ -10,5 +8,7 @@ namespace BajadorDeVideos.Common
         Video ListVideos(List<Video> videoList);
         List<Video> getVideoList(string urlListado);
         byte[] Bajar(Video video);
+        int DisplayMenu();
+        string SelectMenu();
     }
 }

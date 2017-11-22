@@ -4572,7 +4572,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ivan\\.nuget\\packages\\": {},
+    "C:\\Users\\Vir\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -4581,17 +4581,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\workspace\\Lagash\\BajadorDeVideos\\BajadorDeVideos.PluginEjemplo\\BajadorDeVideos.PluginEjemplo.csproj",
+      "projectUniqueName": "C:\\Users\\Vir\\Desktop\\workspace\\BajadorDeVideos\\BajadorDeVideos.PluginEjemplo\\BajadorDeVideos.PluginEjemplo.csproj",
       "projectName": "BajadorDeVideos.PluginEjemplo",
-      "projectPath": "D:\\workspace\\Lagash\\BajadorDeVideos\\BajadorDeVideos.PluginEjemplo\\BajadorDeVideos.PluginEjemplo.csproj",
-      "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-      "outputPath": "D:\\workspace\\Lagash\\BajadorDeVideos\\BajadorDeVideos.PluginEjemplo\\obj\\",
+      "projectPath": "C:\\Users\\Vir\\Desktop\\workspace\\BajadorDeVideos\\BajadorDeVideos.PluginEjemplo\\BajadorDeVideos.PluginEjemplo.csproj",
+      "packagesPath": "C:\\Users\\Vir\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vir\\Desktop\\workspace\\BajadorDeVideos\\BajadorDeVideos.PluginEjemplo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vir\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4604,8 +4604,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\workspace\\Lagash\\BajadorDeVideos\\BajadorDeVideos.Common\\BajadorDeVideos.Common.csproj": {
-              "projectPath": "D:\\workspace\\Lagash\\BajadorDeVideos\\BajadorDeVideos.Common\\BajadorDeVideos.Common.csproj"
+            "C:\\Users\\Vir\\Desktop\\workspace\\BajadorDeVideos\\BajadorDeVideos.Common\\BajadorDeVideos.Common.csproj": {
+              "projectPath": "C:\\Users\\Vir\\Desktop\\workspace\\BajadorDeVideos\\BajadorDeVideos.Common\\BajadorDeVideos.Common.csproj"
             }
           }
         }
