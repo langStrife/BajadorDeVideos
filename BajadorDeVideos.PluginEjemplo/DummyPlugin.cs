@@ -17,7 +17,9 @@ namespace BajadorDeVideos.PluginEjemplo
         {
             WebClient client = new WebClient();
             Console.WriteLine("Descargando Codigo Fuente...");
-            return client.DownloadString(url);
+            string sourceCode = client.DownloadString(url);
+            client.Dispose();
+            return sourceCode;
         }
 
 
@@ -26,7 +28,9 @@ namespace BajadorDeVideos.PluginEjemplo
             HtmlDocument htmlDoc = new HtmlDocument();
 
             htmlDoc.LoadHtml(sourceCode);
-            var videoNodes = htmlDoc.DocumentNode.SelectNodes("//span/a");
+            //var videoNodes = htmlDoc.DocumentNode.SelectNodes("//span/a");
+            var videoNodes = htmlDoc.DocumentNode.SelectNodes("/html/body/div[2]/div/div/main/div[2]/div/div/div/div/div[3]");
+
             List<Video> videoList = new List<Video>();
 
             Console.WriteLine("Creando Lista de Videos");
@@ -73,7 +77,6 @@ namespace BajadorDeVideos.PluginEjemplo
 
         public byte[] Bajar(Video video)
         {
-
             HttpClient client = new HttpClient();
             HtmlWeb web = new HtmlWeb();
             HtmlDocument htmlVideo = web.Load(video.Link);
@@ -83,25 +86,34 @@ namespace BajadorDeVideos.PluginEjemplo
                 iframeSource = "https:" + iframeSource;
             }
             htmlVideo = web.Load(iframeSource);
+
             string htmlScript = htmlVideo.DocumentNode.SelectSingleNode("//body").InnerHtml;
             int start = htmlScript.IndexOf("https://embed");
             int end = htmlScript.IndexOf('"', start);
             string videoUrl = htmlScript.Substring(start, end - start);
-            byte[] archivo = new byte[0];
-            return archivo = client.GetByteArrayAsync(videoUrl).Result;
+            byte[] archivo = client.GetByteArrayAsync(videoUrl).Result;
+            client.Dispose();
+
+            return archivo;
 
         }
 
         public int DisplayMenu()
         {
-            int input;
+            int parsedResult;
 
             Console.WriteLine();
             Console.WriteLine("0. Salir");
             Console.WriteLine("1. Descargar de https://www.commoncraft.com");
             Console.WriteLine("2. Descargar de GoGoAnime [SIN IMPLEMENTAR]");
             Console.WriteLine("3. Ingresar url propia (Puede no funcionar)[SIN IMPLEMENTAR]");
-            return input = Convert.ToInt32(Console.ReadLine());
+
+            if (!int.TryParse(Console.ReadLine(), out parsedResult))
+            {
+                return parsedResult = -1;
+            }
+
+            return parsedResult;
         }
 
         public string SelectMenu()
@@ -112,6 +124,10 @@ namespace BajadorDeVideos.PluginEjemplo
             do
             {
                 input = DisplayMenu();
+                if (input < 0 || input > 3)
+                {
+                    Console.WriteLine("NO!");
+                }
             } while (input < 0 || input > 3);
 
             if (input == 0)
