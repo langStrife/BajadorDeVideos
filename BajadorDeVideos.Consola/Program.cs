@@ -22,18 +22,6 @@ namespace BajadorDeVideos.Consola
                     - obtener la pagina asociada a cada video
                     - Obtener la direccion del primer IFRAME que aparece en la pagina, donde se encuentra el reproductor
                     - De esa URL del iframe, dentro del codigo de inicializacion del player de video, bajar alguna de las URLs indicadas como "url":"https://embed....."
-
-
-                - GOGOANIME
-                    - baseUrl: direccion original de serie (ej, https://ww3.gogoanime.io/category/dragon-ball-kai)
-                    - como listar: 
-                        - Obtener del HTML que devuelve, el campo movie_id 
-                        - Obtener de la URL https://ww3.gogoanime.io/load-list-episode?ep_start=0&ep_end=10000&id=MOVIE_ID el listado de episodios (reemplazando MOVIE_ID por el numero obtenido)
-                    - como bajar video:
-                        - obtener la pagina asociada a cada video
-                        - Obtener la direccion del primer IFRAME que aparece en la pagina, donde se encuentra el reproductor
-                        - Obtener la segunda url del iframe
-                        - De esa URL del iframe, obtener la URL del video (tag source, dentro de video, el que diga type="video/mp4")
              */
 
             IPlugin plugin;
